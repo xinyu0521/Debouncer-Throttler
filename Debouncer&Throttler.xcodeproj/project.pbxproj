@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF63B75F275F2D5700F0455B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B75E275F2D5700F0455B /* AppDelegate.swift */; };
+		AF63B761275F2D5700F0455B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B760275F2D5700F0455B /* SceneDelegate.swift */; };
+		AF63B763275F2D5700F0455B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B762275F2D5700F0455B /* ViewController.swift */; };
+		AF63B766275F2D5700F0455B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF63B764275F2D5700F0455B /* Main.storyboard */; };
+		AF63B768275F2D5900F0455B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF63B767275F2D5900F0455B /* Assets.xcassets */; };
+		AF63B76B275F2D5900F0455B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF63B769275F2D5900F0455B /* LaunchScreen.storyboard */; };
+		AF63B776275F2D5900F0455B /* Debouncer_ThrottlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B775275F2D5900F0455B /* Debouncer_ThrottlerTests.swift */; };
+		AF63B780275F2D5900F0455B /* Debouncer_ThrottlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B77F275F2D5900F0455B /* Debouncer_ThrottlerUITests.swift */; };
+		AF63B782275F2D5900F0455B /* Debouncer_ThrottlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B781275F2D5900F0455B /* Debouncer_ThrottlerUITestsLaunchTests.swift */; };
+		AF63B790275F2DAB00F0455B /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B78F275F2DAB00F0455B /* Debouncer.swift */; };
+		AF63B792275F609300F0455B /* Throttler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63B791275F609300F0455B /* Throttler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF63B772275F2D5900F0455B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF63B753275F2D5700F0455B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF63B75A275F2D5700F0455B;
+			remoteInfo = "Debouncer&Throttler";
+		};
+		AF63B77C275F2D5900F0455B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF63B753275F2D5700F0455B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF63B75A275F2D5700F0455B;
+			remoteInfo = "Debouncer&Throttler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AF63B75B275F2D5700F0455B /* Debouncer&Throttler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Debouncer&Throttler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF63B75E275F2D5700F0455B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF63B760275F2D5700F0455B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF63B762275F2D5700F0455B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF63B765275F2D5700F0455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF63B767275F2D5900F0455B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF63B76A275F2D5900F0455B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF63B76C275F2D5900F0455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF63B771275F2D5900F0455B /* Debouncer&ThrottlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Debouncer&ThrottlerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF63B775275F2D5900F0455B /* Debouncer_ThrottlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer_ThrottlerTests.swift; sourceTree = "<group>"; };
+		AF63B77B275F2D5900F0455B /* Debouncer&ThrottlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Debouncer&ThrottlerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF63B77F275F2D5900F0455B /* Debouncer_ThrottlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer_ThrottlerUITests.swift; sourceTree = "<group>"; };
+		AF63B781275F2D5900F0455B /* Debouncer_ThrottlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer_ThrottlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF63B78F275F2DAB00F0455B /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		AF63B791275F609300F0455B /* Throttler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Throttler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF63B758275F2D5700F0455B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63B76E275F2D5900F0455B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63B778275F2D5900F0455B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF63B752275F2D5700F0455B = {
+			isa = PBXGroup;
+			children = (
+				AF63B75D275F2D5700F0455B /* Debouncer&Throttler */,
+				AF63B774275F2D5900F0455B /* Debouncer&ThrottlerTests */,
+				AF63B77E275F2D5900F0455B /* Debouncer&ThrottlerUITests */,
+				AF63B75C275F2D5700F0455B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF63B75C275F2D5700F0455B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF63B75B275F2D5700F0455B /* Debouncer&Throttler.app */,
+				AF63B771275F2D5900F0455B /* Debouncer&ThrottlerTests.xctest */,
+				AF63B77B275F2D5900F0455B /* Debouncer&ThrottlerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF63B75D275F2D5700F0455B /* Debouncer&Throttler */ = {
+			isa = PBXGroup;
+			children = (
+				AF63B78E275F2D9B00F0455B /* code */,
+				AF63B75E275F2D5700F0455B /* AppDelegate.swift */,
+				AF63B760275F2D5700F0455B /* SceneDelegate.swift */,
+				AF63B762275F2D5700F0455B /* ViewController.swift */,
+				AF63B764275F2D5700F0455B /* Main.storyboard */,
+				AF63B767275F2D5900F0455B /* Assets.xcassets */,
+				AF63B769275F2D5900F0455B /* LaunchScreen.storyboard */,
+				AF63B76C275F2D5900F0455B /* Info.plist */,
+			);
+			path = "Debouncer&Throttler";
+			sourceTree = "<group>";
+		};
+		AF63B774275F2D5900F0455B /* Debouncer&ThrottlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF63B775275F2D5900F0455B /* Debouncer_ThrottlerTests.swift */,
+			);
+			path = "Debouncer&ThrottlerTests";
+			sourceTree = "<group>";
+		};
+		AF63B77E275F2D5900F0455B /* Debouncer&ThrottlerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF63B77F275F2D5900F0455B /* Debouncer_ThrottlerUITests.swift */,
+				AF63B781275F2D5900F0455B /* Debouncer_ThrottlerUITestsLaunchTests.swift */,
+			);
+			path = "Debouncer&ThrottlerUITests";
+			sourceTree = "<group>";
+		};
+		AF63B78E275F2D9B00F0455B /* code */ = {
+			isa = PBXGroup;
+			children = (
+				AF63B78F275F2DAB00F0455B /* Debouncer.swift */,
+				AF63B791275F609300F0455B /* Throttler.swift */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF63B75A275F2D5700F0455B /* Debouncer&Throttler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF63B785275F2D5900F0455B /* Build configuration list for PBXNativeTarget "Debouncer&Throttler" */;
+			buildPhases = (
+				AF63B757275F2D5700F0455B /* Sources */,
+				AF63B758275F2D5700F0455B /* Frameworks */,
+				AF63B759275F2D5700F0455B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Debouncer&Throttler";
+			productName = "Debouncer&Throttler";
+			productReference = AF63B75B275F2D5700F0455B /* Debouncer&Throttler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF63B770275F2D5900F0455B /* Debouncer&ThrottlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF63B788275F2D5900F0455B /* Build configuration list for PBXNativeTarget "Debouncer&ThrottlerTests" */;
+			buildPhases = (
+				AF63B76D275F2D5900F0455B /* Sources */,
+				AF63B76E275F2D5900F0455B /* Frameworks */,
+				AF63B76F275F2D5900F0455B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF63B773275F2D5900F0455B /* PBXTargetDependency */,
+			);
+			name = "Debouncer&ThrottlerTests";
+			productName = "Debouncer&ThrottlerTests";
+			productReference = AF63B771275F2D5900F0455B /* Debouncer&ThrottlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF63B77A275F2D5900F0455B /* Debouncer&ThrottlerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF63B78B275F2D5900F0455B /* Build configuration list for PBXNativeTarget "Debouncer&ThrottlerUITests" */;
+			buildPhases = (
+				AF63B777275F2D5900F0455B /* Sources */,
+				AF63B778275F2D5900F0455B /* Frameworks */,
+				AF63B779275F2D5900F0455B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF63B77D275F2D5900F0455B /* PBXTargetDependency */,
+			);
+			name = "Debouncer&ThrottlerUITests";
+			productName = "Debouncer&ThrottlerUITests";
+			productReference = AF63B77B275F2D5900F0455B /* Debouncer&ThrottlerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF63B753275F2D5700F0455B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AF63B75A275F2D5700F0455B = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					AF63B770275F2D5900F0455B = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AF63B75A275F2D5700F0455B;
+					};
+					AF63B77A275F2D5900F0455B = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = AF63B75A275F2D5700F0455B;
+					};
+				};
+			};
+			buildConfigurationList = AF63B756275F2D5700F0455B /* Build configuration list for PBXProject "Debouncer&Throttler" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF63B752275F2D5700F0455B;
+			productRefGroup = AF63B75C275F2D5700F0455B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF63B75A275F2D5700F0455B /* Debouncer&Throttler */,
+				AF63B770275F2D5900F0455B /* Debouncer&ThrottlerTests */,
+				AF63B77A275F2D5900F0455B /* Debouncer&ThrottlerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF63B759275F2D5700F0455B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF63B76B275F2D5900F0455B /* LaunchScreen.storyboard in Resources */,
+				AF63B768275F2D5900F0455B /* Assets.xcassets in Resources */,
+				AF63B766275F2D5700F0455B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63B76F275F2D5900F0455B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63B779275F2D5900F0455B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF63B757275F2D5700F0455B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF63B763275F2D5700F0455B /* ViewController.swift in Sources */,
+				AF63B792275F609300F0455B /* Throttler.swift in Sources */,
+				AF63B790275F2DAB00F0455B /* Debouncer.swift in Sources */,
+				AF63B75F275F2D5700F0455B /* AppDelegate.swift in Sources */,
+				AF63B761275F2D5700F0455B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63B76D275F2D5900F0455B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF63B776275F2D5900F0455B /* Debouncer_ThrottlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF63B777275F2D5900F0455B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF63B780275F2D5900F0455B /* Debouncer_ThrottlerUITests.swift in Sources */,
+				AF63B782275F2D5900F0455B /* Debouncer_ThrottlerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF63B773275F2D5900F0455B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF63B75A275F2D5700F0455B /* Debouncer&Throttler */;
+			targetProxy = AF63B772275F2D5900F0455B /* PBXContainerItemProxy */;
+		};
+		AF63B77D275F2D5900F0455B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF63B75A275F2D5700F0455B /* Debouncer&Throttler */;
+			targetProxy = AF63B77C275F2D5900F0455B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF63B764275F2D5700F0455B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF63B765275F2D5700F0455B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF63B769275F2D5900F0455B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF63B76A275F2D5900F0455B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF63B783275F2D5900F0455B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF63B784275F2D5900F0455B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF63B786275F2D5900F0455B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Debouncer&Throttler/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DesignPattern.test.Debouncer-Throttler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF63B787275F2D5900F0455B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Debouncer&Throttler/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DesignPattern.test.Debouncer-Throttler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF63B789275F2D5900F0455B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DesignPattern.test.Debouncer-ThrottlerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Debouncer&Throttler.app/Debouncer&Throttler";
+			};
+			name = Debug;
+		};
+		AF63B78A275F2D5900F0455B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DesignPattern.test.Debouncer-ThrottlerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Debouncer&Throttler.app/Debouncer&Throttler";
+			};
+			name = Release;
+		};
+		AF63B78C275F2D5900F0455B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DesignPattern.test.Debouncer-ThrottlerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Debouncer&Throttler";
+			};
+			name = Debug;
+		};
+		AF63B78D275F2D5900F0455B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DesignPattern.test.Debouncer-ThrottlerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Debouncer&Throttler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF63B756275F2D5700F0455B /* Build configuration list for PBXProject "Debouncer&Throttler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63B783275F2D5900F0455B /* Debug */,
+				AF63B784275F2D5900F0455B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF63B785275F2D5900F0455B /* Build configuration list for PBXNativeTarget "Debouncer&Throttler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63B786275F2D5900F0455B /* Debug */,
+				AF63B787275F2D5900F0455B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF63B788275F2D5900F0455B /* Build configuration list for PBXNativeTarget "Debouncer&ThrottlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63B789275F2D5900F0455B /* Debug */,
+				AF63B78A275F2D5900F0455B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF63B78B275F2D5900F0455B /* Build configuration list for PBXNativeTarget "Debouncer&ThrottlerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF63B78C275F2D5900F0455B /* Debug */,
+				AF63B78D275F2D5900F0455B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF63B753275F2D5700F0455B /* Project object */;
+}
